@@ -1,6 +1,7 @@
 execute "set up d-apt" do
   command "wget http://netcologne.dl.sourceforge.net/project/d-apt/files/d-apt.list -O /etc/apt/sources.list.d/d-apt.list"
   user "root"
+  creates '/etc/apt/sources.list.d/d-apt.list'
   action :run
 end
 
